@@ -29,3 +29,11 @@ nnoremap <silent> _ :nohl<CR>
 map <C-c> :NERDTreeTabsToggle<CR>
 map <C-f> :FZF<CR>
 map <C-t> :TagbarToggle<CR>
+
+nmap <Leader>gn <Plug>(GitGutterNextHunk)
+nmap <Leader>gp <Plug>(GitGutterPrevHunk)
+
+nmap <Leader>ga <Plug>(GitGutterStageHunk)
+nmap <Leader>gu <Plug>(GitGutterUndoHunk)
+
+nnoremap <Leader>gs :Magit<CR>

@@ -6,7 +6,7 @@ if ! filereadable(expand('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
-Plug 'preservim/nerdtree' |
+    Plug 'preservim/nerdtree' |
   \ Plug 'Xuyuanp/nerdtree-git-plugin' |
   \ Plug 'jistr/vim-nerdtree-tabs' |
   \ Plug 'terryma/vim-multiple-cursors' |
@@ -14,7 +14,11 @@ Plug 'preservim/nerdtree' |
   \ Plug 'junegunn/fzf.vim' |
   \ Plug 'preservim/nerdcommenter' |
   \ Plug 'mattn/emmet-vim' |
-  \ Plug 'majutsushi/tagbar' | 
-  \ Plug 'townk/vim-autoclose' | 
+  \ Plug 'majutsushi/tagbar' |
+  \ Plug 'townk/vim-autoclose' |
   \ Plug 'audibleblink/hackthebox.vim' | 
+  \ Plug 'tpope/vim-fugitive' |
+  \ Plug 'airblade/vim-gitgutter' |
+  \ Plug 'jreybert/vimagit' |
+  \ Plug 'mg979/vim-visual-multi', {'branch': 'master'} |
 call plug#end()

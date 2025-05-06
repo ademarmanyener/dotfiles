@@ -6,15 +6,18 @@ if ! filereadable(expand('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
-Plug 'preservim/nerdtree' |
+    Plug 'preservim/nerdtree' |
   \ Plug 'Xuyuanp/nerdtree-git-plugin' |
   \ Plug 'jistr/vim-nerdtree-tabs' |
-  \ Plug 'terryma/vim-multiple-cursors' |
+  \ Plug 'preservim/nerdcommenter' |
+  \ Plug 'majutsushi/tagbar' |
   \ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } |
   \ Plug 'junegunn/fzf.vim' |
-  \ Plug 'preservim/nerdcommenter' |
   \ Plug 'mattn/emmet-vim' |
-  \ Plug 'majutsushi/tagbar' | 
-  \ Plug 'townk/vim-autoclose' | 
+  \ Plug 'mg979/vim-visual-multi', {'branch': 'master'} |
+  \ Plug 'townk/vim-autoclose' |
+  \ Plug 'tpope/vim-fugitive' |
+  \ Plug 'airblade/vim-gitgutter' |
+  \ Plug 'jreybert/vimagit' |
   \ Plug 'audibleblink/hackthebox.vim' | 
 call plug#end()
